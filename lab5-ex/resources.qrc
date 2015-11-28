@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>raw/ground.raw</file>
+        <file>raw/torus.raw</file>
+        <file>shaders/ground.frag</file>
+        <file>shaders/ground.vert</file>
+        <file>textures/ground.jpg</file>
+        <file>textures/torus.jpg</file>
+    </qresource>
+</RCC>
