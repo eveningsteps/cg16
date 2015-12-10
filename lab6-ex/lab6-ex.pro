@@ -20,7 +20,4 @@ HEADERS  += window.h
 RESOURCES += \
     resources.qrc
 
-win32
-{
-    LIBS += -lopengl32
-}
+win32:LIBS += -lopengl32

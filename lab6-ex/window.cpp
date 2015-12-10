@@ -54,7 +54,8 @@ void Window::paintGL()
 	ps.setUniformValue("alpha", 1.0f);
 	ps.setUniformValue("sampler", 0);
 
-	glEnableVertexAttribArray(0);
+	GLuint att_vertex = ps.attributeLocation("vertex");
+	glEnableVertexAttribArray(att_vertex);
 	glVertexAttribPointer(0, 1, GL_FLOAT, GL_FALSE, 0, 0);
 	glDrawArrays(GL_POINTS, 0, v.size());
 

@@ -1,5 +1,6 @@
 varying float alpha;
 uniform float time;
+attribute vec3 vertex;
 
 float atten(float d)
 {
@@ -18,11 +19,11 @@ vec3 random_vector(float param)
 
 void main(void)
 {
-    vec3 rnd = random_vector(gl_Vertex.x);
+    vec3 rnd = random_vector(vertex.x);
     vec3 pos = vec3(rnd.y, 1, 0.0);
     vec3 vel = vec3(rnd.z/5.0, -5.0 * abs(rnd.x), 0.0);
 
-    float t = fract((time + gl_Vertex.x) / (100.0 * 2.5));
+    float t = fract((time + vertex.x) / (100.0 * 2.5));
 
     vec3 current_pos = calc_pos(pos, vel, t);
     gl_Position = gl_ModelViewProjectionMatrix * vec4(current_pos, 1.0);
