@@ -21,3 +21,4 @@ RESOURCES += \
     resources.qrc
 
 win32:LIBS += -lopengl32
+
