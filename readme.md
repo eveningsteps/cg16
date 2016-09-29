@@ -6,7 +6,7 @@
 
 Как только Вы решите, что лабораторная доведена до готовности, отправляйте мне её почтой (eveningsteps@gmail.com) или приносите на занятие для демонстрации и защиты.
 
-Проверить свою (или чужую) успеваемость можно [здесь](https://docs.google.com/spreadsheets/d/1IO3KfCwihbVSVykgnYxZ56cFoD8qW0UdGky-jFzFRzQ).
+Проверить свою (или чужую) успеваемость можно [здесь](https://docs.google.com/spreadsheets/d/1vxZZcbAyduxTuj_7g-3LL3nohAsMA6Xg4IUM4OowuTI).
 
 #### Список лабораторных
 1. [Работа с матрицами](lab1.md)
