@@ -5,7 +5,7 @@
 
 int sign(int x)
 {
-    return x >= 0? 1 : -1;
+    return x > 0? 1 : x == 0? 0 : -1;
 }
 
 Widget::Widget(QWidget *parent) :
