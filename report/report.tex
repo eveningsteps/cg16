@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{multicol, multirow}
+\usepackage{tabularx}
+\usepackage{standalone}
+\usepackage{ulem}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{listings}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+
+\lstloadlanguages{C,[ANSI]C++,python}
+\lstset{extendedchars=false,
+	breaklines=true,
+	breakatwhitespace=true,
+	keepspaces = true,
+	tabsize=4
+}
+
+\newcommand{\StudentName}{Данилычев Иван}
+\newcommand{\Group}{8О-206М}
+\newcommand{\CourseName}{Компьютерная графика}
+\newcommand{\LabNum}{420}
+\newcommand{\Subject}{Написание отчётов по лабораторным работам}
+
+\renewcommand\tabularxcolumn[1]{>{\Centering}m{#1}}
+\newcommand{\Descriptive}[2]
+{
+	\begin{tabularx}{\textwidth}{|X|}
+	\hline
+	\\[#1em]
+	#2 \\
+	\\[#1em]
+	\hline
+	\end{tabularx}
+}
+
+\begin{document}
+
+\begin{flushright}
+\Large{
+	\CourseName \\
+	Лабораторная работа №\,\LabNum \\
+	<<\Subject>> \\
+	\StudentName, \Group \\
+}
+\end{flushright}
+
+\subsection*{Задание}
+\Descriptive{5}{Текст задания и требования (берутся с GitHub)}
+
+\subsection*{Теоретическая часть}
+\Descriptive{10}{Примерно столько теоретического материала по теме лабораторки, желательно --- с формулами}
+
+\subsection*{Скриншот(ы)}
+\Descriptive{2}{Один-два скриншота работающей программы, где можно увидеть выполненное задание}
+
+\subsection*{Практическая часть}
+\Descriptive{15}{Фрагмент(ы) кода, \textbf{с помощью которого выполнено задание} (не надо вставлять всю лабу!): процесс отрисовки, расчёт освещения, код шейдера, $\ldots$}
+
+\subsection*{Выводы}
+\Descriptive{3}{
+Мысли на тему сделанной лабы. \textbf{Плохо:} <<При выполнении данной лабораторной я научился X и Y. Были получены навыки Y и Z. $\ldots$>> \textbf{Хорошо:} описание того, зачем нужны только что изученные алгоритмы; обобщение изученного; подводные камни, за которые удалось зацепиться при выполнении и реализации
+}
+\end{document}
