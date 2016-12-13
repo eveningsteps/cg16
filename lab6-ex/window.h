@@ -13,26 +13,25 @@
 
 class Window: public QOpenGLWidget, public QOpenGLFunctions
 {
-	Q_OBJECT
+    Q_OBJECT
 
 public:
-	Window(QWidget *parent = 0);
-	~Window();
+    Window(QWidget *parent = 0);
+    ~Window();
 
 private:
-	void initializeGL();
-	void paintGL();
+    void initializeGL();
+    void paintGL();
 
-	QOpenGLBuffer buf;
-	QOpenGLVertexArrayObject vao;
-	QOpenGLShaderProgram ps;
-	QOpenGLTexture *texture;
+    QOpenGLShaderProgram ps;
+    QOpenGLTexture *texture;
 
-	QTimer timer;
-	size_t frame;
-	QVector<float> v;
+    QTimer timer;
+    size_t frame;
 
-	int particles;
+    GLuint vbo_particles, vbo_random;
+
+    int particles;
 };
 
 #endif // WINDOW_H
